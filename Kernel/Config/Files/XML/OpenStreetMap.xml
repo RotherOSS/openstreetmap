@@ -950,7 +950,7 @@
     </Setting>
 
     <!-- Ticket Specific configs -->
-    
+
     <Setting Name="OpenStreetMap::ActionConfig###006" Required="0" Valid="1">
         <Description Translatable="1">Configurates how the map is presented for a given action.</Description>
         <Navigation>Core::OpenStreetMap::ActionConfig</Navigation>
