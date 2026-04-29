@@ -6,9 +6,11 @@
     <URL>https://rother-oss.com/</URL>
     <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
     <Description Lang="en">Adds an interface to OpenStreetMap.</Description>
+    <Description Lang="hu">Kapcsolódási felületet ad az OpenStreetMap-térképhez.</Description>
     <Framework>10.1.x</Framework>
     <Filelist>
         <File Permission="644" Location="Kernel/Config/Files/XML/OpenStreetMap.xml" />
+        <File Permission="660" Location="Kernel/Language/hu_OpenStreetMap.pm" />
         <File Permission="644" Location="Kernel/Output/HTML/FilterElementPost/OpenStreetMapCIWidget.pm" />
         <File Permission="644" Location="Kernel/Output/HTML/Dashboard/OpenStreetMap.pm" />
         <File Permission="644" Location="Kernel/Output/HTML/Templates/Standard/AgentOpenStreetMap.tt" />
@@ -32,10 +34,19 @@
         <File Permission="644" Location="var/httpd/htdocs/skins/Customer/default/css/Core.OpenStreetMap.css" />
         <File Permission="644" Location="var/httpd/htdocs/skins/Customer/default/img/map.svg" />
     </Filelist>
-    <IntroInstall Type="pre" Title="Installation Information" Lang="de"><![CDATA[
+    <IntroInstall Type="pre" Title="Installation Information" Lang="en"><![CDATA[
         <br/>
         <br/>
         This plugin relies on the tile servers of OpenStreetMap (https://www.openstreetmap.org/about). If you plan on using it, please consider donating to them (https://wiki.osmfoundation.org/wiki/Donate), to help them keeping their servers running. (When doing this, you could tell them who sent you. ;)
+        <br/>
+        <br/>
+        ((enjoy))<br/>
+        <br/>
+    ]]></IntroInstall>
+    <IntroInstall Type="pre" Title="Telepítési információk" Lang="hu"><![CDATA[
+        <br/>
+        <br/>
+        Ez a bővítmény az OpenStreetMap csempekiszolgálóira támaszkodik (https://www.openstreetmap.org/about). Ha azt tervezi, hogy használni fogja, akkor fontolja meg, hogy adományozzon nekik (https://wiki.osmfoundation.org/wiki/Donate), hogy segítsen a kiszolgálóik működésének fenntartásában. Ha ezt teszi, akkor elmondhatja nekik, hogy ki küldte Önt. ;)
         <br/>
         <br/>
         ((enjoy))<br/>
