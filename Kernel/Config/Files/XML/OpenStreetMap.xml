@@ -1033,8 +1033,8 @@
                             <Array>
                             </Array>
                         </Item>
-                        <Item Key="Description" Translatable="1">AgentTicketOpenStreetMap</Item>
-                        <Item Key="Name">Ticket Map</Item>
+                        <Item Key="Description" Translatable="1">Show tickets on a map.</Item>
+                        <Item Key="Name" Translatable="1">Ticket Map</Item>
                         <Item Key="Link">Action=AgentTicketOpenStreetMap</Item>
                         <Item Key="LinkOption"></Item>
                         <Item Key="NavBar">Ticket</Item>
