@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -117,7 +117,7 @@ sub GatherInfo {
         if ( !@CIs ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'notice',
-                Message =>
+                Message  =>
                     "No link of class $Param{BackendDef}{LocationInfo}{LinkedClasses}[0] found for ConfigItemID $Param{ConfigItemID}!",
             );
             return;
@@ -159,37 +159,38 @@ sub GatherInfo {
             UserID => 1,
         );
 
-        my @Sections;
+        #    my @Sections;
 
-    # hier weiter...
-    #        LINKS:
-    #        for my $LTypes ( values %{ $LinkList } ) {
-    #          for my $LDirs ( values %{ $LTypes } ) {
-    #            for my $CINums ( values %{ $LDirs } ) {
-    #              for my $LinkedItem ( values %{ $CINums } ) {
-    #
-    #                if ( !$Ends[0] && $LinkedItem->{Class} eq $Param{BackendDef}{LocationInfo}{LinkedClasses} ) {
-    #                    $Ends[0] = $LinkedItem->{ConfigItemID};
-    #                    if ( $Ends[1] ) {
-    #                        last LINKS;
-    #                    }
-    #                }
-    #                elsif ( !$Ends[1] && $LinkedItem->{Class} eq $Param{BackendDef}{LocationInfo}{LinkedClasses}[1] ) {
-    #                    $Ends[1] = $LinkedItem->{ConfigItemID};
-    #                    if ( $Ends[0] ) {
-    #                        last LINKS;
-    #                    }
-    #                }
-    #
-    #              }
-    #            }
-    #          }
-    #        }
-    #
+        # hier weiter...
+        #        LINKS:
+        #        for my $LTypes ( values %{ $LinkList } ) {
+        #          for my $LDirs ( values %{ $LTypes } ) {
+        #            for my $CINums ( values %{ $LDirs } ) {
+        #              for my $LinkedItem ( values %{ $CINums } ) {
+        #
+        #                if ( !$Ends[0] && $LinkedItem->{Class} eq $Param{BackendDef}{LocationInfo}{LinkedClasses} ) {
+        #                    $Ends[0] = $LinkedItem->{ConfigItemID};
+        #                    if ( $Ends[1] ) {
+        #                        last LINKS;
+        #                    }
+        #                }
+        #                elsif ( !$Ends[1] && $LinkedItem->{Class} eq $Param{BackendDef}{LocationInfo}{LinkedClasses}[1] ) {
+        #                    $Ends[1] = $LinkedItem->{ConfigItemID};
+        #                    if ( $Ends[0] ) {
+        #                        last LINKS;
+        #                    }
+        #                }
+        #
+        #              }
+        #            }
+        #          }
+        #        }
+        #
     }
-##use Data::Dumper;
-##print STDERR "vo60 - Icons: ".Dumper(\%Icons);
-##print STDERR "vo60 - Lines: ".Dumper(\%Lines);
+
+    ##use Data::Dumper;
+    ##print STDERR "vo60 - Icons: ".Dumper(\%Icons);
+    ##print STDERR "vo60 - Lines: ".Dumper(\%Lines);
     #
     return (
         From  => $From,

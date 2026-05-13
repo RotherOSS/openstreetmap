@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -20,7 +20,9 @@ use strict;
 use warnings;
 
 our @ObjectDependencies = (
+    'Kernel::Config',
     'Kernel::System::Log',
+    'Kernel::System::Main',
     'Kernel::System::GeneralCatalog',
     'Kernel::System::ITSMConfigItem',
 );
@@ -103,7 +105,7 @@ sub GatherInfo {
         my $OverrideConfig = $Kernel::OM->Get('Kernel::Config')->Get('OpenStreetMap::IconOverride')->{ $Param{BackendDef}{IconOverride} };
 
         # load the module
-        if ( !$Kernel::OM->Get('Kernel::System::Main')->Require($OverrideConfig->{Module}) ) {
+        if ( !$Kernel::OM->Get('Kernel::System::Main')->Require( $OverrideConfig->{Module} ) ) {
             $Kernel::OM->Get('Kernel::System::Log')->Log(
                 Priority => 'error',
                 Message  => "Can't load the override module $OverrideConfig->{Module}!"
@@ -113,7 +115,7 @@ sub GatherInfo {
 
         # create new instance
         $IconObject = $OverrideConfig->{Module}->new(
-            %{ $OverrideConfig },
+            %{$OverrideConfig},
         );
     }
 
@@ -150,13 +152,13 @@ sub GatherInfo {
                 Version => $Version,
             );
 
-            if ( $OverrideIcon ) {
+            if ($OverrideIcon) {
                 $Icon = $OverrideIcon;
             }
         }
 
         # place Icon (LinkSelf only for agents)
-        if ( $Icon ) {
+        if ($Icon) {
             push @{ $Icons{Path} },      $Icon;
             push @{ $Icons{Latitude} },  $Latitude;
             push @{ $Icons{Longitude} }, $Longitude;

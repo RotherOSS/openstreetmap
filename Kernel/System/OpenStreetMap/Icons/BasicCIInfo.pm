@@ -2,7 +2,7 @@
 # OTOBO is a web-based ticketing system for service organisations.
 # --
 # Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
-# Copyright (C) 2019-2020 Rother OSS GmbH, https://otobo.de/
+# Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 # --
 # This program is free software: you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free Software
@@ -37,7 +37,7 @@ Defines which icons to use, based on states.
 
 =head2 new()
 
-create an object. 
+create an object.
 
     my $IconObject = Kernel::System::OpenStreetMap::Icons::BasicCIInfo->new(
         %Param,
@@ -81,18 +81,17 @@ sub GetIcon {
 
     STATE:
     for my $Name ( keys %{ $Self->{States} } ) {
-        for my $Attr ( keys %{ $Self->{States}{ $Name } } ) {
-            if ( !$Param{Version}{ $Attr } || $Param{Version}{ $Attr } ne $Self->{States}{ $Name }{ $Attr } ) {
+        for my $Attr ( keys %{ $Self->{States}{$Name} } ) {
+            if ( !$Param{Version}{$Attr} || $Param{Version}{$Attr} ne $Self->{States}{$Name}{$Attr} ) {
                 next STATE;
             }
         }
 
         # we fullfill all requirements here
-        return $Self->{IconPaths}{ $Name } if $Self->{IconPaths}{ $Name };
+        return $Self->{IconPaths}{$Name} if $Self->{IconPaths}{$Name};
     }
-    
+
     return;
 }
 
 1;
-
