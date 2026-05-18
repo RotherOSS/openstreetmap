@@ -40,8 +40,6 @@ sub Data {
         'Felülbírálja az alapértelmezett ikont a konfigurációelem-információk alapján. A „States” határozza meg az állapotokat, és az „IconPaths” rendeli hozzájuk az ikonútvonalakat.';
     $Self->{Translation}->{'Parameters for the OpenStreetMap dashboard backend.'} = 'Paraméterek az OpenStreetMap vezérlőpult háttérprogramjához.';
     $Self->{Translation}->{'Show the OpenStreetMap'} = 'Az OpenStreetMap megjelenítése';
-    $Self->{Translation}->{'Show tickets on a map.'} = 'Jegyek megjelenítése egy térképen.';
-    $Self->{Translation}->{'Ticket Map'} = 'Jegytérkép';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (

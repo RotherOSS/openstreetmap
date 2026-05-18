@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenStreetMap\n"
+"POT-Creation-Date: 2026-05-18 13:55+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Template: OpenStreetMapWidget
+msgid "OpenStreetMap"
+msgstr "OpenStreetMap"
+
+#. SysConfig
+msgid "Color representation of incident states on the map."
+msgstr "A térképen lévő incidensállapotok színábrázolása."
+
+#. SysConfig
+msgid "Configurates Backend information for each class. LocationInfo can contain either SourceKeys for Latitude and Longitude or Linked Classes which provide those. LineColor can be either \"#rgb\" (e.g. \"#ff0000\"), or \"DeploymentState\" or \"IncidentState\", to match the specific color."
+msgstr "Beállítja a háttérprogram-információkat az egyes osztályoknál. A „LocationInfo” tartalmazhatja a helyinformációkat, amelyeket vagy a „SourceKeys” forráskulcsban kell megadni szélesség („Latitude”) és hosszúság („Longitude”) formában, vagy a „LinkedClasses” kulcsban lévő kapcsolt osztályokkal, amelyek tartalmazzák a koordinátákat. A „LineColor” adja meg a vonal színét, amely vagy „#rgb” (például „#ff0000”) vagy üzembe állítási állapot („DeploymentState”) vagy incidensállapot („IncidentState”) lehet, hogy egyezzen a megadott színnel."
+
+#. SysConfig
+msgid "Configurates how the map is presented for a given action."
+msgstr "Azt állítja be, hogy a térkép hogyan jelenjen meg egy adott műveletnél."
+
+#. SysConfig
+msgid "For which classes the map is displayed."
+msgstr "Melyik osztályoknál jelenjen meg a térkép."
+
+#. SysConfig
+msgid "Map"
+msgstr "Térkép"
+
+#. SysConfig
+msgid "OpenStreetMap with ConfigItems and Customers."
+msgstr "OpenStreetMap konfigurációelemekkel és ügyfelekkel."
+
+#. SysConfig
+msgid "Output filter to add an OpenStreetMap widget to the AgentITSMConfigItemZoom screen."
+msgstr "Kimenetszűrő ahhoz, hogy OpenStreetMap felületi elemet adjon az ügyintézői felület konfigurációelem-nagyítás képernyőjéhez."
+
+#. SysConfig
+msgid "Overrides the default icon based on config item information. Define \"States\" and assign \"IconPaths\" to them."
+msgstr "Felülbírálja az alapértelmezett ikont a konfigurációelem-információk alapján. A „States” határozza meg az állapotokat, és az „IconPaths” rendeli hozzájuk az ikonútvonalakat."
+
+#. SysConfig
+msgid "Parameters for the OpenStreetMap dashboard backend."
+msgstr "Paraméterek az OpenStreetMap vezérlőpult háttérprogramjához."
+
+#. SysConfig
+msgid "Show the OpenStreetMap"
+msgstr "Az OpenStreetMap megjelenítése"
+
