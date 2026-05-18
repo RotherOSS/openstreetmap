@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenStreetMap\n"
+"POT-Creation-Date: 2026-05-18 14:01+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Template: OpenStreetMapWidget
+msgid "OpenStreetMap"
+msgstr ""
+
+#. SysConfig
+msgid "Color representation of incident states on the map."
+msgstr ""
+
+#. SysConfig
+msgid "Configurates Backend information for each class. LocationInfo can contain either SourceKeys for Latitude and Longitude or Linked Classes which provide those. LineColor can be either \"#rgb\" (e.g. \"#ff0000\"), or \"DeploymentState\" or \"IncidentState\", to match the specific color."
+msgstr ""
+
+#. SysConfig
+msgid "Configurates how the map is presented for a given action."
+msgstr ""
+
+#. SysConfig
+msgid "For which classes the map is displayed."
+msgstr ""
+
+#. SysConfig
+msgid "Map"
+msgstr ""
+
+#. SysConfig
+msgid "OpenStreetMap with ConfigItems and Customers."
+msgstr ""
+
+#. SysConfig
+msgid "Output filter to add an OpenStreetMap widget to the AgentITSMConfigItemZoom screen."
+msgstr ""
+
+#. SysConfig
+msgid "Overrides the default icon based on config item information. Define \"States\" and assign \"IconPaths\" to them."
+msgstr ""
+
+#. SysConfig
+msgid "Parameters for the OpenStreetMap dashboard backend."
+msgstr ""
+
+#. SysConfig
+msgid "Show the OpenStreetMap"
+msgstr ""
+
+#. SysConfig
+msgid "Show tickets on a map."
+msgstr ""
+
+#. SysConfig
+msgid "Ticket Map"
+msgstr ""
+
