@@ -42,6 +42,8 @@ sub Data {
     $Self->{Translation}->{'Show the OpenStreetMap'} = 'Az OpenStreetMap megjelenítése';
     $Self->{Translation}->{'Show tickets on a map.'} = 'Jegyek megjelenítése egy térképen.';
     $Self->{Translation}->{'Ticket Map'} = 'Jegytérkép';
+    $Self->{Translation}->{'Tile registration for the CustomerDashboard. Module is required.'} =
+        '';
 
 
     push @{ $Self->{JavaScriptStrings} // [] }, (
