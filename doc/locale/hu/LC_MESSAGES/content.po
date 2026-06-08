@@ -8,38 +8,39 @@ msgstr ""
 "Project-Id-Version: OpenStreetMap\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-13 12:58+0000\n"
-"PO-Revision-Date: 2026-04-29 14:39+0200\n"
+"PO-Revision-Date: 2026-06-08 12:00+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
-"Language-Team: Hungarian\n"
+"Language-Team: Hungarian <http://translate.otobo.org/projects/manual-"
+"openstreetmap/master/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.08.1\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16\n"
 
 #: ../content/index.rst:5
-#, fuzzy
-#| msgid "Contact"
 msgid "Contents"
-msgstr "Kapcsolat"
+msgstr "Tartalom"
 
 #: ../content/index.rst:10
 msgid "Overview"
-msgstr ""
+msgstr "Áttekintés"
 
 #: ../content/index.rst:12
 msgid "Summary"
-msgstr ""
+msgstr "Összegzés"
 
 #: ../content/index.rst:13
 msgid ""
 "Provides a map which marks geographical positions related to ConfigItems."
 msgstr ""
+"Egy olyan térképet biztosít, amelyen a konfigurációelemekhez tartozó "
+"földrajzi pozíciók vannak megjelölve."
 
 #: ../content/index.rst:16
 msgid "Introduction"
-msgstr ""
+msgstr "Bevezetés"
 
 #: ../content/index.rst:17
 msgid ""
@@ -48,39 +49,41 @@ msgid ""
 "represented on a map through the `OpenStreetMap <https://https://"
 "www.openstreetmap.org/>`_ platform."
 msgstr ""
+"Ez a csomag egy olyan funkciót tartalmaz, amellyel a konfigurációelemek és a "
+"köztük lévő kapcsolatok, valamint a hozzájuk tartozó jegyek földrajzilag "
+"ábrázolhatók egy térképen az `OpenStreetMap <https://https://"
+"www.openstreetmap.org/>`_ platformon keresztül."
 
 #: ../content/index.rst:19
 msgid "The map can be accessed through:"
-msgstr ""
+msgstr "A térkép a következőképpen érhető el:"
 
 #: ../content/index.rst:21
 msgid "The menu option *CMDB->Map* to show the map for ConfigItems."
 msgstr ""
+"A *CMDB → Térkép* menüponttal a konfigurációelemek térképének "
+"megjelenítéséhez"
 
 #: ../content/index.rst:22
 msgid ""
 "The menu option *Tickets->Ticket Map* to show the map for related tickets"
 msgstr ""
+"A *Jegyek → Jegytérkép* menüponttal a kapcsolódó jegyek térképének "
+"megjelenítéséhez"
 
 #: ../content/index.rst:23
 msgid "A widget on the Dashboard interface"
-msgstr ""
+msgstr "A vezérlőpult felületén lévő felületi elemmel"
 
 #: ../content/index.rst:24
-#, fuzzy
-#| msgid ""
-#| "Output filter to add an OpenStreetMap widget to the "
-#| "AgentITSMConfigItemZoom screen."
 msgid "A widget on the AgentITSMConfigItemZoom interface"
 msgstr ""
-"Kimenetszűrő ahhoz, hogy OpenStreetMap felületi elemet adjon az ügyintézői "
-"felület konfigurációelem-nagyítás képernyőjéhez."
+"Az ügyintéző ITSM-konfigurációelem nagyításának felületén lévő felületi "
+"elemmel"
 
 #: ../content/index.rst:27
-#, fuzzy
-#| msgid "Configuration Reference"
 msgid "Configuration"
-msgstr "Beállítási hivatkozás"
+msgstr "Beállítás"
 
 #: ../content/index.rst:30
 msgid "System requirements"
@@ -100,17 +103,15 @@ msgstr "Csomagok"
 
 #: ../content/index.rst:38 ../content/index.rst:42 ../content/index.rst:55
 msgid "Not applicable"
-msgstr ""
+msgstr "Nem alkalmazható"
 
 #: ../content/index.rst:41
 msgid "Third-party software"
 msgstr "Harmadik féltől származó szoftverek"
 
 #: ../content/index.rst:45
-#, fuzzy
-#| msgid "Configuration Reference"
 msgid "Basic Configuration"
-msgstr "Beállítási hivatkozás"
+msgstr "Alapvető beállítás"
 
 #: ../content/index.rst:46
 msgid ""
@@ -119,6 +120,10 @@ msgid ""
 "Repository. Click the associated  *Install* link on that line and respond "
 "affirmatively to any confirmation questions that may follow."
 msgstr ""
+"Nyissa meg a csomagkezelő modult az ügyintézői felületen lévő adminisztráció "
+"csoportból. Válassza ki az OpenStreetMap nevű csomagot az internetes "
+"tárolóból. Kattintson az adott sorban található *Telepítés* hivatkozásra, és "
+"válaszoljon igenlően az esetlegesen felmerülő megerősítő kérdésekre."
 
 #: ../content/index.rst:49
 msgid ""
@@ -128,18 +133,14 @@ msgid ""
 "through *OpenStreetMap::ShowForClasses*, so that mapping will apply only for "
 "certain classes."
 msgstr ""
+"Az *OpenStreetMap::ActionConfig* beállításokban határozza meg, hogy a térkép "
+"mely műveleteknél legyen elérhető, és mely osztályokat kell megjeleníteni. "
+"Az ügyintézői felületen lévő konfigurációelem-nagyítás térkép felületi "
+"elemeként megjelenítendő osztályok az *OpenStreetMap::ShowForClasses* "
+"beállításon keresztül szűrhetők, hogy a térképen való megjelenítés csak "
+"bizonyos osztályoknál legyen alkalmazva."
 
 #: ../content/index.rst:51
-#, fuzzy
-#| msgid ""
-#| "In the ActionConfigs define which on which actions the map should be "
-#| "available and which classes should be shown. For AgentITSMConfigItemZoom "
-#| "this can be filtered with OpenStreetMap::ShowForClasses to be shown only "
-#| "for certain classes. In the ClassConfigs define, how classes should be "
-#| "represented on the map. For locations, i.e. classes which should be "
-#| "represented as points on the map, the class needs an attribute which "
-#| "contains the latitude and one which contains the longitude, both in "
-#| "decimal representation."
 msgid ""
 "In the *OpenStreetMap::ClassConfig* configurations, specify how classes "
 "should be represented on the map. For locations, i.e. classes which should "
@@ -147,24 +148,19 @@ msgid ""
 "the two attributes that respectively contain the latitude and the longitude, "
 "both in decimal representation."
 msgstr ""
-"Az „ActionConfig” beállításokban határozható meg, hogy mely műveleteknél "
-"kell a térképnek elérhetőnek lennie, és mely osztályokat kell megjeleníteni. "
-"Az ügyintézői felületen lévő konfigurációelem-nagyításnál ez az "
-"„OpenStreetMap::ShowForClasses” beállítással szűrhető, hogy csak bizonyos "
-"osztályoknál jelenjenek meg. A „ClassConfig” beállítások határozzák meg, "
-"hogy az osztályok hogyan jelenjenek meg a térképen. A helyeknél, azaz olyan "
-"osztályoknál, amelyeket pontként kell megjeleníteni a térképen, az "
-"osztálynak rendelkeznie kell egy olyan attribútummal, amely tartalmazza a "
-"szélesség koordinátáját, és egy olyannal, amely a hosszúság koordinátáját "
-"tartalmazza, mindkettőnél tizedes ábrázolással."
+"Az *OpenStreetMap::ClassConfig* beállításokban határozza meg, hogy az "
+"osztályokat hogyan kell ábrázolni a térképen. Helyeknél, azaz olyan "
+"osztályoknál, amelyeket pontokként kell ábrázolni a térképen, az osztály két "
+"attribútum megadását igényli, amelyek rendre a szélességi és hosszúsági "
+"koordinátákat tartalmazzák, mindkettőt tizedes formában."
 
 #: ../content/index.rst:54
 msgid "Custom Configuration and Advanced Features"
-msgstr ""
+msgstr "Egyéni beállítások és speciális funkciók"
 
 #: ../content/index.rst:58
 msgid "Configuration Reference"
-msgstr "Beállítási hivatkozás"
+msgstr "Beállítások hivatkozása"
 
 #: ../content/index.rst:60
 msgid "Core::OpenStreetMap"
@@ -214,44 +210,32 @@ msgstr ""
 "Azt állítja be, hogy a térkép hogyan jelenjen meg egy adott műveletnél."
 
 #: ../content/index.rst:82
-#, fuzzy
-#| msgid "OpenStreetMap::ActionConfig###001"
 msgid "OpenStreetMap::ActionConfig###002"
-msgstr "OpenStreetMap::ActionConfig###001"
+msgstr "OpenStreetMap::ActionConfig###002"
 
 #: ../content/index.rst:86
-#, fuzzy
-#| msgid "OpenStreetMap::ActionConfig###001"
 msgid "OpenStreetMap::ActionConfig###003"
-msgstr "OpenStreetMap::ActionConfig###001"
+msgstr "OpenStreetMap::ActionConfig###003"
 
 #: ../content/index.rst:90
-#, fuzzy
-#| msgid "OpenStreetMap::ActionConfig###001"
 msgid "OpenStreetMap::ActionConfig###004"
-msgstr "OpenStreetMap::ActionConfig###001"
+msgstr "OpenStreetMap::ActionConfig###004"
 
 #: ../content/index.rst:94
-#, fuzzy
-#| msgid "OpenStreetMap::ActionConfig###001"
 msgid "OpenStreetMap::ActionConfig###005"
-msgstr "OpenStreetMap::ActionConfig###001"
+msgstr "OpenStreetMap::ActionConfig###005"
 
 #: ../content/index.rst:98
-#, fuzzy
-#| msgid "OpenStreetMap::ActionConfig###001"
 msgid "OpenStreetMap::ActionConfig###006"
-msgstr "OpenStreetMap::ActionConfig###001"
+msgstr "OpenStreetMap::ActionConfig###006"
 
 #: ../content/index.rst:102
 msgid "Core::OpenStreetMap::ClassConfig"
 msgstr "Core::OpenStreetMap::ClassConfig"
 
 #: ../content/index.rst:105
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###001"
 msgid "OpenStreetMap::ClassConfig###029"
-msgstr "OpenStreetMap::ClassConfig###001"
+msgstr "OpenStreetMap::ClassConfig###029"
 
 #: ../content/index.rst:106
 msgid ""
@@ -282,10 +266,8 @@ msgid "Frontend module registration for the agent interface."
 msgstr "Előtétprogram-modul regisztráció az ügyintézői felülethez."
 
 #: ../content/index.rst:116
-#, fuzzy
-#| msgid "Frontend::Module###AgentOpenStreetMap"
 msgid "Frontend::Module###AgentTicketOpenStreetMap"
-msgstr "Frontend::Module###AgentOpenStreetMap"
+msgstr "Frontend::Module###AgentTicketOpenStreetMap"
 
 #: ../content/index.rst:120
 msgid "Frontend::Agent::ModuleRegistration::Loader"
@@ -309,10 +291,8 @@ msgid "Loader::Module::AgentDashboard###437-OSM"
 msgstr "Loader::Module::AgentDashboard###437-OSM"
 
 #: ../content/index.rst:135
-#, fuzzy
-#| msgid "Loader::Module::AgentOpenStreetMap###437-OSM"
 msgid "Loader::Module::AgentTicketOpenStreetMap###437-OSM"
-msgstr "Loader::Module::AgentOpenStreetMap###437-OSM"
+msgstr "Loader::Module::AgentTicketOpenStreetMap###437-OSM"
 
 #: ../content/index.rst:139
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
@@ -327,13 +307,10 @@ msgid "Main menu item registration."
 msgstr "Főmenü elem regisztráció."
 
 #: ../content/index.rst:146
-#, fuzzy
-#| msgid ""
-#| "CustomerFrontend::Navigation###CustomerOpenStreetMap###002-OpenStreetMap"
 msgid ""
 "Frontend::Navigation###AgentTicketOpenStreetMap###005-TicketOpenStreetMap"
 msgstr ""
-"CustomerFrontend::Navigation###CustomerOpenStreetMap###002-OpenStreetMap"
+"Frontend::Navigation###AgentTicketOpenStreetMap###005-TicketOpenStreetMap"
 
 #: ../content/index.rst:150
 msgid "Frontend::Agent::View::Dashboard"
@@ -422,16 +399,12 @@ msgid "Rother OSS GmbH"
 msgstr "Rother OSS GmbH"
 
 #: ../content/index.rst:201
-#, fuzzy
-#| msgid "Email: hello@otobo.de"
 msgid "Email: hello@otobo.io"
-msgstr "E-mail: hello@otobo.de"
+msgstr "E-mail: hello@otobo.io"
 
 #: ../content/index.rst:202
-#, fuzzy
-#| msgid "Web: https://otobo.de"
 msgid "Web: https://otobo.io"
-msgstr "Web: https://otobo.de"
+msgstr "Web: https://otobo.io"
 
 #: ../content/index.rst:205
 msgid "Version"
