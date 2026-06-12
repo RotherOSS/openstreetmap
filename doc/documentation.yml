@@ -3,7 +3,7 @@
 Variables:
   doc_name: OTOBO OpenStreetMap Guide
   doc_description: This is the description of the documentation.
-  doc_version: rel-11.0
+  doc_version: rel-11.1
   doc_yearstamp: current_yearstamp
   doc_vendor: Rother OSS GmbH
   doc_url: https://otobo.de
@@ -14,8 +14,8 @@ Variables:
 ProjectName: OTOBO Installation Guide
 Copyright: 2019-2024 Rother OSS GmbH, https://otobo.de/
 Author: Rother OSS GmbH
-Version: rel-11.0
-Release: rel-11.0
+Version: rel-11.1
+Release: rel-11.1
 
 # sphinx extension module names to be used
 Extensions:
