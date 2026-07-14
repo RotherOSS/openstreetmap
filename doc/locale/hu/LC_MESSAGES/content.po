@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: OpenStreetMap\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-13 12:00+0000\n"
-"PO-Revision-Date: 2026-07-14 12:21+0000\n"
+"PO-Revision-Date: 2026-07-14 13:26+0000\n"
 "Last-Translator: Balázs Úr <balazs@urbalazs.hu>\n"
 "Language-Team: Hungarian <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/openstreetmap-documentation/hu/>\n"
@@ -206,8 +206,7 @@ msgstr "OpenStreetMap::ActionConfig###001"
 #: ../content/index.rst:80 ../content/index.rst:84 ../content/index.rst:88
 #: ../content/index.rst:92 ../content/index.rst:96 ../content/index.rst:100
 msgid "Configurates how the map is presented for a given action."
-msgstr ""
-"Azt állítja be, hogy a térkép hogyan jelenjen meg egy adott műveletnél."
+msgstr "Azt állítja be, hogy a térkép hogyan jelenjen meg egy adott műveletnél."
 
 #: ../content/index.rst:83
 msgid "OpenStreetMap::ActionConfig###002"
@@ -234,10 +233,8 @@ msgid "Core::OpenStreetMap::ClassConfig"
 msgstr "Core::OpenStreetMap::ClassConfig"
 
 #: ../content/index.rst:106
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###001"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###001"
 
 #: ../content/index.rst:107 ../content/index.rst:111 ../content/index.rst:115
 #: ../content/index.rst:119 ../content/index.rst:123 ../content/index.rst:127
@@ -252,9 +249,9 @@ msgid ""
 "those. LineColor can be either \"#rgb\" (e.g. \"#ff0000\"), or "
 "\"DeploymentState\" or \"IncidentState\", to match the specific color."
 msgstr ""
-"Beállítja a háttérprogram-információkat az egyes osztályoknál. A "
-"„LocationInfo” tartalmazhatja a helyinformációkat, amelyeket vagy a "
-"„SourceKeys” forráskulcsban kell megadni szélesség („Latitude”) és hosszúság "
+"Beállítja a háttérprogram-információkat az egyes osztályoknál. A „"
+"LocationInfo” tartalmazhatja a helyinformációkat, amelyeket vagy a „"
+"SourceKeys” forráskulcsban kell megadni szélesség („Latitude”) és hosszúság "
 "(„Longitude”) formában, vagy a „LinkedClasses” kulcsban lévő kapcsolt "
 "osztályokkal, amelyek tartalmazzák a koordinátákat. A „LineColor” adja meg a "
 "vonal színét, amely vagy „#rgb” (például „#ff0000”) vagy üzembe állítási "
@@ -262,118 +259,80 @@ msgstr ""
 "hogy egyezzen a megadott színnel."
 
 #: ../content/index.rst:110
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###002"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###002"
 
 #: ../content/index.rst:114
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###003"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###003"
 
 #: ../content/index.rst:118
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###004"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###004"
 
 #: ../content/index.rst:122
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###005"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###005"
 
 #: ../content/index.rst:126
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###006"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###006"
 
 #: ../content/index.rst:130
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###007"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###007"
 
 #: ../content/index.rst:134
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###008"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###008"
 
 #: ../content/index.rst:138
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###009"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###009"
 
 #: ../content/index.rst:142
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###010"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###010"
 
 #: ../content/index.rst:146
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###011"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###011"
 
 #: ../content/index.rst:150
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###012"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###012"
 
 #: ../content/index.rst:154
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###013"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###013"
 
 #: ../content/index.rst:158
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###014"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###014"
 
 #: ../content/index.rst:162
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###015"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###015"
 
 #: ../content/index.rst:166
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###016"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###016"
 
 #: ../content/index.rst:170
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###017"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###017"
 
 #: ../content/index.rst:174
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###018"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###018"
 
 #: ../content/index.rst:178
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###019"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###019"
 
 #: ../content/index.rst:182
-#, fuzzy
-#| msgid "OpenStreetMap::ClassConfig###029"
 msgid "OpenStreetMap::ClassConfig###020"
-msgstr "OpenStreetMap::ClassConfig###029"
+msgstr "OpenStreetMap::ClassConfig###020"
 
 #: ../content/index.rst:186
 msgid "Frontend::Agent::ModuleRegistration"
@@ -452,7 +411,8 @@ msgstr "Frontend::Base::OutputFilter"
 
 #: ../content/index.rst:237
 msgid "Frontend::Output::FilterElementPost###OutputFilterPostOpenStreetMapCIWidget"
-msgstr "Frontend::Output::FilterElementPost###OutputFilterPostOpenStreetMapCIWidget"
+msgstr ""
+"Frontend::Output::FilterElementPost###OutputFilterPostOpenStreetMapCIWidget"
 
 #: ../content/index.rst:238
 msgid ""
