@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: OTOBO Installation Guide rel-11.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-13 12:00+0000\n"
-"PO-Revision-Date: 2026-10-05 04:41+0000\n"
+"PO-Revision-Date: 2026-10-05 06:42+0000\n"
 "Last-Translator: Kozo Sakurai <sakurai@io-architect.com>\n"
 "Language-Team: Japanese <http://translate.otobo.org/projects/otobo-11-1/"
 "addons/manuals/openstreetmap-documentation/ja/>\n"
@@ -23,24 +23,24 @@ msgstr ""
 
 #: ../content/index.rst:5
 msgid "Contents"
-msgstr ""
+msgstr "目次"
 
 #: ../content/index.rst:10
 msgid "Overview"
-msgstr ""
+msgstr "一覧"
 
 #: ../content/index.rst:12
 msgid "Summary"
-msgstr ""
+msgstr "概要"
 
 #: ../content/index.rst:13
 msgid ""
 "Provides a map which marks geographical positions related to ConfigItems."
-msgstr ""
+msgstr "構成アイテムに関連する地理的な位置を示す地図を提供します。"
 
 #: ../content/index.rst:16
 msgid "Introduction"
-msgstr ""
+msgstr "はじめに"
 
 #: ../content/index.rst:17
 msgid ""
@@ -49,59 +49,62 @@ msgid ""
 "represented on a map through the `OpenStreetMap <https://https://"
 "www.openstreetmap.org/>`_ platform."
 msgstr ""
+"このパッケージは、構成アイテムとその相互接続、および関連するチケットを"
+"、`OpenStreetMap <https://https://www.openstreetmap.org/>`_ プラットフォーム"
+"を通じて地図上に地理的に表示する機能を追加します。"
 
 #: ../content/index.rst:19
 msgid "The map can be accessed through:"
-msgstr ""
+msgstr "地図には次の方法でアクセスできます:"
 
 #: ../content/index.rst:21
 msgid "The menu option *CMDB->Map* to show the map for ConfigItems."
-msgstr ""
+msgstr "構成アイテムの地図を表示するメニューオプション *CMDB->Map*"
 
 #: ../content/index.rst:22
 msgid ""
 "The menu option *Tickets->Ticket Map* to show the map for related tickets"
-msgstr ""
+msgstr "関連するチケットの地図を表示するメニューオプション *Tickets->Ticket Map*"
 
 #: ../content/index.rst:23
 msgid "A widget on the Dashboard interface"
-msgstr ""
+msgstr "ダッシュボード画面のウィジェット"
 
 #: ../content/index.rst:24
 msgid "A widget on the AgentITSMConfigItemZoom interface"
-msgstr ""
+msgstr "AgentITSMConfigItemZoom 画面のウィジェット"
 
 #: ../content/index.rst:27
 msgid "Configuration"
-msgstr ""
+msgstr "設定"
 
 #: ../content/index.rst:30
 msgid "System requirements"
-msgstr ""
+msgstr "システム要件"
 
 #: ../content/index.rst:33
 msgid "Framework"
-msgstr ""
+msgstr "フレームワーク"
 
 #: ../content/index.rst:34
 msgid "OTOBO 11.1.x"
-msgstr ""
+msgstr "OTOBO 11.1.x"
 
 #: ../content/index.rst:37
 msgid "Packages"
-msgstr ""
+msgstr "パッケージ"
 
 #: ../content/index.rst:38 ../content/index.rst:42 ../content/index.rst:55
 msgid "Not applicable"
-msgstr ""
+msgstr "該当なし"
 
 #: ../content/index.rst:41
 msgid "Third-party software"
-msgstr ""
+msgstr "サードパーティ製ソフトウェア"
 
 #: ../content/index.rst:45
 msgid "Basic Configuration"
-msgstr ""
+msgstr "基本設定"
 
 #: ../content/index.rst:46
 msgid ""
@@ -110,6 +113,10 @@ msgid ""
 "Repository. Click the associated  *Install* link on that line and respond "
 "affirmatively to any confirmation questions that may follow."
 msgstr ""
+"担当者インタフェースの管理グループからパッケージマネージャーのモジュールを開"
+"きます。オンラインリポジトリから OpenStreetMap という名前のパッケージを選択し"
+"ます。その行にある *Install* リンクをクリックし、表示される確認にはすべて「は"
+"い」で答えてください。"
 
 #: ../content/index.rst:49
 msgid ""
@@ -119,6 +126,10 @@ msgid ""
 "through *OpenStreetMap::ShowForClasses*, so that mapping will apply only for "
 "certain classes."
 msgstr ""
+"*OpenStreetMap::ActionConfig* の設定で、地図を利用できるアクションと表示する"
+"クラスを定義します。AgentITSMConfigItemZoom の地図ウィジェットに表示する"
+"クラスは *OpenStreetMap::ShowForClasses* で絞り込めるため、特定のクラスにのみ"
+"地図を適用できます。"
 
 #: ../content/index.rst:51
 msgid ""
@@ -128,85 +139,90 @@ msgid ""
 "the two attributes that respectively contain the latitude and the longitude, "
 "both in decimal representation."
 msgstr ""
+"*OpenStreetMap::ClassConfig* の設定で、各クラスを地図上でどのように表示するか"
+"を指定します。場所（地図上に点として表示するクラス）については、緯度と経度を"
+"それぞれ10進数で保持する2つの属性を指定する必要があります。"
 
 #: ../content/index.rst:54
 msgid "Custom Configuration and Advanced Features"
-msgstr ""
+msgstr "カスタム設定と高度な機能"
 
 #: ../content/index.rst:58
 msgid "Configuration Reference"
-msgstr ""
+msgstr "設定リファレンス"
 
 #: ../content/index.rst:61
 msgid "Core::OpenStreetMap"
-msgstr ""
+msgstr "Core::OpenStreetMap"
 
 #: ../content/index.rst:64
 msgid "OpenStreetMap::IconOverride###BasicCIInfo01"
-msgstr ""
+msgstr "OpenStreetMap::IconOverride###BasicCIInfo01"
 
 #: ../content/index.rst:65
 msgid ""
 "Overrides the default icon based on config item information. Define "
 "\"States\" and assign \"IconPaths\" to them."
 msgstr ""
+"構成アイテムの情報に基づいて、デフォルトのアイコンを上書きします。\"States\" "
+"を定義し、それぞれに \"IconPaths\" を割り当ててください。"
 
 #: ../content/index.rst:68
 msgid "OpenStreetMap::IncidentStateColors"
-msgstr ""
+msgstr "OpenStreetMap::IncidentStateColors"
 
 #: ../content/index.rst:69
 msgid "Color representation of incident states on the map."
-msgstr ""
+msgstr "地図上でのインシデント状況の色表示。"
 
 #: ../content/index.rst:72
 msgid "OpenStreetMap::ShowForClasses"
-msgstr ""
+msgstr "OpenStreetMap::ShowForClasses"
 
 #: ../content/index.rst:73
 msgid "For which classes the map is displayed."
-msgstr ""
+msgstr "地図を表示するクラス。"
 
 #: ../content/index.rst:76
 msgid "Core::OpenStreetMap::ActionConfig"
-msgstr ""
+msgstr "Core::OpenStreetMap::ActionConfig"
 
 #: ../content/index.rst:79
 msgid "OpenStreetMap::ActionConfig###001"
-msgstr ""
+msgstr "OpenStreetMap::ActionConfig###001"
 
 #: ../content/index.rst:80 ../content/index.rst:84 ../content/index.rst:88
 #: ../content/index.rst:92 ../content/index.rst:96 ../content/index.rst:100
 msgid "Configurates how the map is presented for a given action."
-msgstr ""
+msgstr "各アクションで地図をどのように表示するかを設定します。"
 
 #: ../content/index.rst:83
 msgid "OpenStreetMap::ActionConfig###002"
-msgstr ""
+msgstr "OpenStreetMap::ActionConfig###002"
 
 #: ../content/index.rst:87
 msgid "OpenStreetMap::ActionConfig###003"
-msgstr ""
+msgstr "OpenStreetMap::ActionConfig###003"
 
 #: ../content/index.rst:91
 msgid "OpenStreetMap::ActionConfig###004"
-msgstr ""
+msgstr "OpenStreetMap::ActionConfig###004"
 
 #: ../content/index.rst:95
 msgid "OpenStreetMap::ActionConfig###005"
-msgstr ""
+msgstr "OpenStreetMap::ActionConfig###005"
 
 #: ../content/index.rst:99
 msgid "OpenStreetMap::ActionConfig###006"
-msgstr ""
+msgstr "OpenStreetMap::ActionConfig###006"
 
 #: ../content/index.rst:103
 msgid "Core::OpenStreetMap::ClassConfig"
-msgstr ""
+msgstr "Core::OpenStreetMap::ClassConfig"
 
 #: ../content/index.rst:106
 msgid "OpenStreetMap::ClassConfig###001"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###001"
 
 #: ../content/index.rst:107 ../content/index.rst:111 ../content/index.rst:115
 #: ../content/index.rst:119 ../content/index.rst:123 ../content/index.rst:127
@@ -221,131 +237,135 @@ msgid ""
 "those. LineColor can be either \"#rgb\" (e.g. \"#ff0000\"), or "
 "\"DeploymentState\" or \"IncidentState\", to match the specific color."
 msgstr ""
+"各クラスのバックエンド情報を設定します。LocationInfo には、緯度と経度の "
+"SourceKeys、またはそれらを提供するリンク先クラスのいずれかを指定できます。"
+"LineColor には、\"#rgb\"（例: \"#ff0000\"）、または特定の色に合わせる "
+"\"DeploymentState\" か \"IncidentState\" を指定できます。"
 
 #: ../content/index.rst:110
 msgid "OpenStreetMap::ClassConfig###002"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###002"
 
 #: ../content/index.rst:114
 msgid "OpenStreetMap::ClassConfig###003"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###003"
 
 #: ../content/index.rst:118
 msgid "OpenStreetMap::ClassConfig###004"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###004"
 
 #: ../content/index.rst:122
 msgid "OpenStreetMap::ClassConfig###005"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###005"
 
 #: ../content/index.rst:126
 msgid "OpenStreetMap::ClassConfig###006"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###006"
 
 #: ../content/index.rst:130
 msgid "OpenStreetMap::ClassConfig###007"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###007"
 
 #: ../content/index.rst:134
 msgid "OpenStreetMap::ClassConfig###008"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###008"
 
 #: ../content/index.rst:138
 msgid "OpenStreetMap::ClassConfig###009"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###009"
 
 #: ../content/index.rst:142
 msgid "OpenStreetMap::ClassConfig###010"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###010"
 
 #: ../content/index.rst:146
 msgid "OpenStreetMap::ClassConfig###011"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###011"
 
 #: ../content/index.rst:150
 msgid "OpenStreetMap::ClassConfig###012"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###012"
 
 #: ../content/index.rst:154
 msgid "OpenStreetMap::ClassConfig###013"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###013"
 
 #: ../content/index.rst:158
 msgid "OpenStreetMap::ClassConfig###014"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###014"
 
 #: ../content/index.rst:162
 msgid "OpenStreetMap::ClassConfig###015"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###015"
 
 #: ../content/index.rst:166
 msgid "OpenStreetMap::ClassConfig###016"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###016"
 
 #: ../content/index.rst:170
 msgid "OpenStreetMap::ClassConfig###017"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###017"
 
 #: ../content/index.rst:174
 msgid "OpenStreetMap::ClassConfig###018"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###018"
 
 #: ../content/index.rst:178
 msgid "OpenStreetMap::ClassConfig###019"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###019"
 
 #: ../content/index.rst:182
 msgid "OpenStreetMap::ClassConfig###020"
-msgstr ""
+msgstr "OpenStreetMap::ClassConfig###020"
 
 #: ../content/index.rst:186
 msgid "Frontend::Agent::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration"
 
 #: ../content/index.rst:189
 msgid "Frontend::Module###AgentOpenStreetMap"
-msgstr ""
+msgstr "Frontend::Module###AgentOpenStreetMap"
 
 #: ../content/index.rst:190 ../content/index.rst:194 ../content/index.rst:245
 msgid "Frontend module registration for the agent interface."
-msgstr ""
+msgstr "担当者インタフェース用のフロントエンドモジュールの登録。"
 
 #: ../content/index.rst:193
 msgid "Frontend::Module###AgentTicketOpenStreetMap"
-msgstr ""
+msgstr "Frontend::Module###AgentTicketOpenStreetMap"
 
 #: ../content/index.rst:197
 msgid "Frontend::Agent::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::Loader"
 
 #: ../content/index.rst:200
 msgid "Loader::Module::AgentDashboard###437-OSM"
-msgstr ""
+msgstr "Loader::Module::AgentDashboard###437-OSM"
 
 #: ../content/index.rst:201 ../content/index.rst:205 ../content/index.rst:209
 #: ../content/index.rst:213
 msgid "Loader module registration for the agent interface."
-msgstr ""
+msgstr "担当者インタフェース用のローダーモジュールの登録。"
 
 #: ../content/index.rst:204
 msgid "Loader::Module::AgentITSMConfigItemZoom###437-OSM"
-msgstr ""
+msgstr "Loader::Module::AgentITSMConfigItemZoom###437-OSM"
 
 #: ../content/index.rst:208
 msgid "Loader::Module::AgentOpenStreetMap###437-OSM"
-msgstr ""
+msgstr "Loader::Module::AgentOpenStreetMap###437-OSM"
 
 #: ../content/index.rst:212
 msgid "Loader::Module::AgentTicketOpenStreetMap###437-OSM"
-msgstr ""
+msgstr "Loader::Module::AgentTicketOpenStreetMap###437-OSM"
 
 #: ../content/index.rst:216
 msgid "Frontend::Agent::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Agent::ModuleRegistration::MainMenu"
 
 #: ../content/index.rst:219
 msgid "Frontend::Navigation###AgentITSMConfigItem###004-OpenStreetMap"
-msgstr ""
+msgstr "Frontend::Navigation###AgentITSMConfigItem###004-OpenStreetMap"
 
 #: ../content/index.rst:220 ../content/index.rst:224 ../content/index.rst:263
 msgid "Main menu item registration."
@@ -355,48 +375,52 @@ msgstr "メインメニュー項目の登録。"
 msgid ""
 "Frontend::Navigation###AgentTicketOpenStreetMap###005-TicketOpenStreetMap"
 msgstr ""
+"Frontend::Navigation###AgentTicketOpenStreetMap###005-TicketOpenStreetMap"
 
 #: ../content/index.rst:227
 msgid "Frontend::Agent::View::Dashboard"
-msgstr ""
+msgstr "Frontend::Agent::View::Dashboard"
 
 #: ../content/index.rst:230
 msgid "DashboardBackend###0002-OpenStreetMap"
-msgstr ""
+msgstr "DashboardBackend###0002-OpenStreetMap"
 
 #: ../content/index.rst:231
 msgid "Parameters for the OpenStreetMap dashboard backend."
-msgstr ""
+msgstr "OpenStreetMap ダッシュボード・バックエンドのパラメータ。"
 
 #: ../content/index.rst:234
 msgid "Frontend::Base::OutputFilter"
-msgstr ""
+msgstr "Frontend::Base::OutputFilter"
 
 #: ../content/index.rst:237
 msgid "Frontend::Output::FilterElementPost###OutputFilterPostOpenStreetMapCIWidget"
 msgstr ""
+"Frontend::Output::FilterElementPost###OutputFilterPostOpenStreetMapCIWidget"
 
 #: ../content/index.rst:238
 msgid ""
 "Output filter to add an OpenStreetMap widget to the AgentITSMConfigItemZoom "
 "screen."
 msgstr ""
+"AgentITSMConfigItemZoom 画面に OpenStreetMap ウィジェットを追加する出力"
+"フィルター。"
 
 #: ../content/index.rst:241
 msgid "Frontend::Customer::ModuleRegistration"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration"
 
 #: ../content/index.rst:244
 msgid "CustomerFrontend::Module###CustomerOpenStreetMap"
-msgstr ""
+msgstr "CustomerFrontend::Module###CustomerOpenStreetMap"
 
 #: ../content/index.rst:248
 msgid "Frontend::Customer::ModuleRegistration::Loader"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration::Loader"
 
 #: ../content/index.rst:251
 msgid "Loader::Module::CustomerDashboard###437-OSM"
-msgstr ""
+msgstr "Loader::Module::CustomerDashboard###437-OSM"
 
 #: ../content/index.rst:252 ../content/index.rst:256
 msgid "Loader module registration for the customer interface."
@@ -404,55 +428,58 @@ msgstr "顧客インタフェース用のローダーモジュールの登録。
 
 #: ../content/index.rst:255
 msgid "Loader::Module::CustomerOpenStreetMap###437-OSM"
-msgstr ""
+msgstr "Loader::Module::CustomerOpenStreetMap###437-OSM"
 
 #: ../content/index.rst:259
 msgid "Frontend::Customer::ModuleRegistration::MainMenu"
-msgstr ""
+msgstr "Frontend::Customer::ModuleRegistration::MainMenu"
 
 #: ../content/index.rst:262
 msgid ""
 "CustomerFrontend::Navigation###CustomerOpenStreetMap###002-OpenStreetMap"
 msgstr ""
+"CustomerFrontend::Navigation###CustomerOpenStreetMap###002-OpenStreetMap"
 
 #: ../content/index.rst:266
 msgid "Frontend::Customer::View::Dashboard::Tiles"
-msgstr ""
+msgstr "Frontend::Customer::View::Dashboard::Tiles"
 
 #: ../content/index.rst:269
 msgid "CustomerDashboard::Tiles###OpenStreetMap"
-msgstr ""
+msgstr "CustomerDashboard::Tiles###OpenStreetMap"
 
 #: ../content/index.rst:270
 msgid "Tile registration for the CustomerDashboard. Module is required."
-msgstr ""
+msgstr "CustomerDashboard のタイル登録。Module は必須です。"
 
 #: ../content/index.rst:273
 msgid "About"
-msgstr ""
+msgstr "概要"
 
 #: ../content/index.rst:276
 msgid "Contact"
-msgstr ""
+msgstr "連絡先"
 
 #: ../content/index.rst:277
 msgid "Rother OSS GmbH"
-msgstr ""
+msgstr "Rother OSS GmbH"
 
 #: ../content/index.rst:278
 msgid "Email: hello@otobo.io"
-msgstr ""
+msgstr "メール: hello@otobo.io"
 
 #: ../content/index.rst:279
 msgid "Web: https://otobo.io"
-msgstr ""
+msgstr "Web: https://otobo.io"
 
 #: ../content/index.rst:282
 msgid "Version"
-msgstr ""
+msgstr "バージョン"
 
 #: ../content/index.rst:283
 msgid ""
 "Author: |doc-vendor| / Version: |doc-version| / Date of release: |doc-"
 "datestamp|"
 msgstr ""
+"作成者: |doc-vendor| / バージョン: |doc-version| / リリース日: |doc-"
+"datestamp|"
