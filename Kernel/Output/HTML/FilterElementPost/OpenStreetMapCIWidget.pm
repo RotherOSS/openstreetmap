@@ -45,11 +45,11 @@ sub Run {
     return 1 if !$ShowMapClasses;
 
     # get the version of the shown CI
-    $Self->{RequestedURL} =~ /ConfigItemID=(\d+)/;
-    return 1 if !$1;
+    my ($ConfigItemID) = $Self->{RequestedURL} =~ /ConfigItemID=(\d+)/;
+    return 1 if !$ConfigItemID;
 
     my $Version = $ConfigItemObject->ConfigItemGet(
-        ConfigItemID  => $1,
+        ConfigItemID  => $ConfigItemID,
         DynamicFields => 0,
     );
 
