@@ -1,8 +1,8 @@
 // --
 // OTOBO is a web-based ticketing system for service organisations.
 // --
-// Copyright (C) 2001-2018 OTRS AG, https://otrs.com/
-// Copyright (C) 2019-2025 Rother OSS GmbH, https://otobo.de/
+// Copyright (C) 2001-2020 OTRS AG, https://otrs.com/
+// Copyright (C) 2019-2026 Rother OSS GmbH, https://otobo.io/
 // --
 // This program is free software: you can redistribute it and/or modify it under
 // the terms of the GNU General Public License as published by the Free Software
@@ -12,6 +12,7 @@
 // FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 // You should have received a copy of the GNU General Public License
 // along with this program. If not, see <https://www.gnu.org/licenses/>.
+// --
 
 "use strict";
 
@@ -42,16 +43,16 @@ Core.OpenStreetMap = (function (TargetNS) {
 
         // Karten anlegen
 
-        var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { // eslint-disable-line no-undef
             maxZoom: 20,
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>'
         });
 
-            var map = L.map(mapcanvas, { layers: osm, tap: false } ) ;
+            var map = L.map(mapcanvas, { layers: osm, tap: false } ) ; // eslint-disable-line no-undef
 
         // Mit Maßstab
 
-            L.control.scale({imperial:false}).addTo(map);
+            L.control.scale({imperial:false}).addTo(map); // eslint-disable-line no-undef
 
         //Kartenausschnitt wählen
         var Data = {};
@@ -89,7 +90,7 @@ Core.OpenStreetMap = (function (TargetNS) {
             // link function creator to have constant Urls for old browsers, too
             function GetLinkOpener( Url ) {
                 return function() {
-                    window.open( Url, "_self" );
+                    window.location.href = Url;
                 };
             }
 
@@ -104,11 +105,11 @@ Core.OpenStreetMap = (function (TargetNS) {
                     var Icon;
                     // add to map
                     if ( Icons['Path'][i] == '' ) {
-                        Icon = L.marker([Icons['Latitude'][i], Icons['Longitude'][i]]).addTo(map);
+                        Icon = L.marker([Icons['Latitude'][i], Icons['Longitude'][i]]).addTo(map); // eslint-disable-line no-undef
                     }
                     else {
-                        var Logo = L.icon({ iconUrl: Icons['Path'][i], iconSize: [10, 15], iconAnchor: [5, 15] });
-                        Icon = L.marker([Icons['Latitude'][i], Icons['Longitude'][i]], {icon: Logo});
+                        var Logo = L.icon({ iconUrl: Icons['Path'][i], iconSize: [10, 15], iconAnchor: [5, 15] }); // eslint-disable-line no-undef
+                        Icon = L.marker([Icons['Latitude'][i], Icons['Longitude'][i]], {icon: Logo}); // eslint-disable-line no-undef
                         Icon.addTo(map);
                     }
 
@@ -130,15 +131,15 @@ Core.OpenStreetMap = (function (TargetNS) {
                 // map the unordered Response array to an attribute hash
                 var Lines = {};
                 Response['Lines'].map(function(n){ Lines[ n[0] ] = n[1] });
-                for (var i = 0; i < Lines['From0'].length ; i++) {
+                for (i = 0; i < Lines['From0'].length ; i++) {
 
                     // add to map
-                    var Line = L.polyline([ [Lines['From0'][i], Lines['From1'][i]], [Lines['To0'][i], Lines['To1'][i]] ], {color: Lines['Color'][i], weight: Lines['Weight'][i], opacity: 1} );
+                    var Line = L.polyline([ [Lines['From0'][i], Lines['From1'][i]], [Lines['To0'][i], Lines['To1'][i]] ], {color: Lines['Color'][i], weight: Lines['Weight'][i], opacity: 1} ); // eslint-disable-line no-undef
                     Line.addTo(map);
 
                     // link
                     if ( Lines['Link'][i] != '' ) {
-                        var OpenUrl = GetLinkOpener( Core.Config.Get('Baselink')+Lines['Link'][i] );
+                        OpenUrl = GetLinkOpener( Core.Config.Get('Baselink')+Lines['Link'][i] );
                         Line.on( "click", OpenUrl );
                     }
 
@@ -154,7 +155,7 @@ Core.OpenStreetMap = (function (TargetNS) {
                 map.fitBounds( bounds );
 
             // Karte bei resize neu skalieren
-                map.on("resize", function(e){
+                map.on("resize", function(){
                     map.fitBounds( bounds );
                 });
 
