@@ -25,7 +25,6 @@ our @ObjectDependencies = (
     'Kernel::System::Main',
     'Kernel::System::GeneralCatalog',
     'Kernel::System::ITSMConfigItem',
-    'Kernel::System::Main',
 );
 
 =head1 NAME
